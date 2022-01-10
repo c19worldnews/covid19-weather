@@ -126,7 +126,8 @@ def prediction(city_name,country_name,iso_code,label_alpha_2,select_location):
 
   location = select_location.replace(" ", "-")
   country = location.lower()
- 
+  
+  country_name = country_name.replace(" ", "-")
   usa_prov = country_name.lower()
   #scraping the button show all click data
   #return select_location
@@ -383,11 +384,11 @@ def main():
                                     ['Australia', 'Brazil','Canada','France','Germany','Italy','India','Japan','Mexico','Spain','United Kingdom','USA'] )
     
     #for streamlit
-    reference_file = pd.read_csv('https://raw.githubusercontent.com/neerja198/Deployment/main/location_list.csv')                         
+    reference_file = pd.read_csv('https://raw.githubusercontent.com/c19worldnews/covid19-weather/main/location_list.csv')                         
     #for google colab
     #reference_file = pd.read_csv('/content/drive/MyDrive/Weather/Deployment/location_list.csv')
     if select_location == 'USA':
-            usa_dataset = pd.read_csv('https://raw.githubusercontent.com/neerja198/Deployment/main/USA_referance.csv') 
+            usa_dataset = pd.read_csv('https://raw.githubusercontent.com/c19worldnews/covid19-weather/main/USA_referance.csv') 
            
             sel_prov = '<p style="font-style: oblique; text-align:left;color:white; font-size:16px">Select Province</p>'
             st.sidebar.markdown(sel_prov,unsafe_allow_html=True)
@@ -432,11 +433,11 @@ def main():
 
             result =""
     else: 
-          reference_file = pd.read_csv('https://raw.githubusercontent.com/neerja198/Deployment/main/location_list.csv')
+          reference_file = pd.read_csv('https://raw.githubusercontent.com/c19worldnews/covid19-weather/main/location_list.csv')
           
 
           #country = st.sidebar.selectbox("Select Country", sorted(reference_file.Country.unique()), index=0)
-          country = select_location
+          country = select_location.replace(" ", "-")
           sel_prov_city = '<p style="font-style: oblique; text-align:left;color:white; font-size:16px">Select Province/City</p>'
           st.sidebar.markdown(sel_prov_city,unsafe_allow_html=True)
           city_name = st.sidebar.selectbox("Select Province/City", sorted(reference_file.loc[reference_file.Country == country].City.unique()))    
