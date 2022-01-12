@@ -124,9 +124,11 @@ def prediction(city_name,country_name,iso_code,label_alpha_2,select_location):
   session = HTMLSession()
   headers = {'Accept-Language': 'en-US,en;q=0.8'}
 
+  
   location = select_location.replace(" ", "-")
   country = location.lower()
- 
+  
+  country_name = country_name.replace(" ", "-")
   usa_prov = country_name.lower()
   #scraping the button show all click data
   #return select_location
