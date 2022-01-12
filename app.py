@@ -474,7 +474,10 @@ def main():
             
             html_location = str("<p style='text-align: left; color: white; font-size:20px'>") + str( result[5] + " , "  +result[1])+ str("</p>")
             col1.markdown(html_location, unsafe_allow_html=True)
-            if result[4] == 'fl':
+            #for florida
+            if result[4] == 'fl' or result[4] == 'mi':
+                st.image("https://flagcdn.com/256x192/"+ "us-" +result[4]+".png" , width=40)
+            elif result[4] == 'ca' and result[1] == 'USA' :
                 st.image("https://flagcdn.com/256x192/"+ "us-" +result[4]+".png" , width=40)
             else:
                 st.image("https://flagcdn.com/256x192/"+result[4]+".png" , width=40)
