@@ -144,7 +144,7 @@ def prediction(city_name,country_name,iso_code,label_alpha_2,select_location):
   #for share streamlit
   #/app/deployment/chromedriver
   wd = webdriver.Chrome(executable_path ='chromedriver', options=chrome_options)
-  wd = webdriver.Chrome(executable_path ='chromedriver')
+  #wd = webdriver.Chrome(executable_path ='chromedriver')
   
 
   if select_location == 'USA':
