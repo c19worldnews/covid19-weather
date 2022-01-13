@@ -6,14 +6,12 @@ Western Australia,Australia,AUS,11,,,
 Tasmania,Australia,AUS,11,,,
 South Australia,Australia,AUS,11,,,
 Queensland,Australia,AUS,11,,,
-Rondônia,Brazil,BRA,27,,,
 Espírito Santo,Brazil,BRA,27,,,
 Rio Grande do Norte,Brazil,BRA,27,,,
 Roraima,Brazil,BRA,27,,,
 Amapá,Brazil,BRA,27,,,
 Rio de Janeiro,Brazil,BRA,27,,,
 São Paulo,Brazil,BRA,27,,,
-Pará,Brazil,BRA,27,,,
 Distrito Federal,Brazil,BRA,27,,,
 Pernambuco,Brazil,BRA,27,,,
 Maranhão,Brazil,BRA,27,,,
@@ -40,9 +38,7 @@ Provence-Alpes-Côte d'Azur,France,FRA,63,93,Alpes-de-Haute-Provence,4
 Provence-Alpes-Côte d'Azur,France,FRA,63,93,Hautes-Alpes,5
 Provence-Alpes-Côte d'Azur,France,FRA,63,93,Alpes-Maritimes,6
 Auvergne et Rhône-Alpes,France,FRA,63,84,Ardèche,7
-Grand Est,France,FRA,63,44,Ardennes,8
 Occitanie,France,FRA,63,76,Ariège,9
-Grand Est,France,FRA,63,44,Aube,10
 Occitanie,France,FRA,63,76,Aude,11
 Occitanie,France,FRA,63,76,Aveyron,12
 Provence-Alpes-Côte d'Azur,France,FRA,63,93,Bouches-du-Rhône,13
@@ -84,11 +80,7 @@ Nouvelle Aquitaine,France,FRA,63,75,Lot-et-Garonne,47
 Occitanie,France,FRA,63,76,Lozère,48
 Pays de la Loire,France,FRA,63,52,Maine-et-Loire,49
 Normandie,France,FRA,63,28,Manche,50
-Grand Est,France,FRA,63,44,Marne,51
-Grand Est,France,FRA,63,44,Haute-Marne,52
 Pays de la Loire,France,FRA,63,52,Mayenne,53
-Grand Est,France,FRA,63,44,Meurthe-et-Moselle,54
-Grand Est,France,FRA,63,44,Meuse,55
 Bretagne,France,FRA,63,53,Morbihan,56
 Grand Est,France,FRA,63,44,Moselle,57
 Bourgogne et Franche-Comté,France,FRA,63,27,Nièvre,58
@@ -100,8 +92,6 @@ Auvergne et Rhône-Alpes,France,FRA,63,84,Puy-de-Dôme,63
 Nouvelle Aquitaine,France,FRA,63,75,Pyrénées-Atlantiques,64
 Occitanie,France,FRA,63,76,Hautes-Pyrénées,65
 Occitanie,France,FRA,63,76,Pyrénées-Orientales,66
-Grand Est,France,FRA,63,44,Bas-Rhin,67
-Grand Est,France,FRA,63,44,Haut-Rhin,68
 Auvergne et Rhône-Alpes,France,FRA,63,84,Rhône,69
 Bourgogne et Franche-Comté,France,FRA,63,27,Haute-Saône,70
 Bourgogne et Franche-Comté,France,FRA,63,27,Saône-et-Loire,71
@@ -135,7 +125,6 @@ Guyane,France,FRA,63,3,Guyane,973
 Réunion,France,FRA,63,4,Réunion,974
 Mayotte,France,FRA,63,6,Mayotte,976
 Saxony,Germany,DEU,49,,,
-Bavaria,Germany,DEU,49,,,
 Thuringia,Germany,DEU,49,,,
 Saxony-Anhalt,Germany,DEU,49,,,
 Brandenburg,Germany,DEU,49,,,
@@ -328,10 +317,7 @@ Shimane,Japan,JPN,97,,,
 Tottori,Japan,JPN,97,,,
 Toyama,Japan,JPN,97,,,
 Yamanashi,Japan,JPN,97,,,
-Baja California,Mexico,MEX,123,,,
 Sonora,Mexico,MEX,123,,,
-Baja California Sur,Mexico,MEX,123,,,
-Coahuila,Mexico,MEX,123,,,
 Mexico City,Mexico,MEX,123,,,
 Guanajuato,Mexico,MEX,123,,,
 Chihuahua,Mexico,MEX,123,,,
@@ -359,7 +345,6 @@ Michoacán,Mexico,MEX,123,,,
 Guerrero,Mexico,MEX,123,,,
 Puebla,Mexico,MEX,123,,,
 Tlaxcala,Mexico,MEX,123,,,
-Chiapas,Mexico,MEX,123,,,
 Navarra,Spain,ESP,57,,,
 País Vasco,Spain,ESP,57,,,
 Aragón,Spain,ESP,57,,,
