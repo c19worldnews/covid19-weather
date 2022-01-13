@@ -385,7 +385,7 @@ def main():
                                     ['Australia', 'Brazil','Canada','France','Germany','Italy','India','Japan','Mexico','Spain','United Kingdom','USA'] )
     
     #for streamlit
-    reference_file = pd.read_csv('https://raw.githubusercontent.com/neerja198/Deployment/main/location_list.csv')                         
+    reference_file = pd.read_csv('https://raw.githubusercontent.com/c19worldnews/covid19-weather/main/location_list.csv')                         
     #for google colab
     #reference_file = pd.read_csv('/content/drive/MyDrive/Weather/Deployment/location_list.csv')
     if select_location == 'USA':
@@ -434,7 +434,7 @@ def main():
 
             result =""
     else: 
-          reference_file = pd.read_csv('https://raw.githubusercontent.com/neerja198/Deployment/main/location_list.csv')
+          reference_file = pd.read_csv('https://raw.githubusercontent.com/c19worldnews/covid19-weather/main/location_list.csv')
           
 
           #country = st.sidebar.selectbox("Select Country", sorted(reference_file.Country.unique()), index=0)
