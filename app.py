@@ -436,7 +436,7 @@ def main():
           
 
           #country = st.sidebar.selectbox("Select Country", sorted(reference_file.Country.unique()), index=0)
-          country = select_location
+          country = select_location.replace(" ", "-")
           sel_prov_city = '<p style="font-style: oblique; text-align:left;color:white; font-size:16px">Select Province/City</p>'
           st.sidebar.markdown(sel_prov_city,unsafe_allow_html=True)
           city_name = st.sidebar.selectbox("Select Province/City", sorted(reference_file.loc[reference_file.Country == country].City.unique()))    
