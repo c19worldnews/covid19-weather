@@ -529,7 +529,7 @@ def main():
       
       .reportview-container .main {{
         
-          background-color: #343A40
+          background-color:#f9f9f9;
           
           }}
      
@@ -553,8 +553,8 @@ def main():
       <style>
       [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {{
          
-          background-color:#343A40;
-          width:230px;
+          background-color:#f9f9f9;
+          width:300px;
           
       }}
       </style>
