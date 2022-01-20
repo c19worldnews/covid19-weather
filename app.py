@@ -734,7 +734,7 @@ def main():
                 st.image("https://flagcdn.com/256x192/"+ "us-" +result[4]+".png" , width=40)
             else:
                 st.image("https://flagcdn.com/256x192/"+result[4]+".png" , width=40)
-            html_newcases = str("<p style='text-align:right;margin-left:auto;background:#1C294B;height:36px;line-height:36px;font-size:16px;font-weight:600;border:0;color:#fff;padding:0 11px;font-family: 'Lato', sans-serif;letter-spacing: 0.5px;text-decoration:none;max-width: fit-content;'>") + str( "New Cases: " + f"{int(result[3]):,}")+ str("</p>")
+            html_newcases = str("<p style=' text-align: right;margin-left: auto;background: rgb(28, 41, 75);height: 36px;line-height: 36px;font-size: 20px;font-weight: 600;border: 0px;color: rgb(255, 255, 255);padding: 0px 20px;max-width: fit-content;'>") + str( "New Cases: " + f"{int(result[3]):,}")+ str("</p>")
             col2.markdown(html_newcases, unsafe_allow_html=True)
             
             
