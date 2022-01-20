@@ -563,7 +563,7 @@ def main():
       )
     
     
-    new_title = '<p style="font-style: oblique; text-align:center;color:#cc0919; font-size:25px">5  Days Forecasting of Covid 19 New Cases Based on Weather</p>'
+    new_title = '<p style="background:#1C294B;font-size:30px;line-height:36px;font-weight:500;color:#fff;text-align:center;padding:13px 0;margin:0;">5  Days Forecasting of Covid 19 New Cases Based on Weather</p>'
     st.markdown(new_title,unsafe_allow_html=True)
    
   
@@ -571,13 +571,13 @@ def main():
     #adding sidebar
 
     #-- Set by location
-    sel_location = '<p style="font-style: oblique; text-align:left;color:white; font-size:16px">Select Location</p>'
-    st.sidebar.markdown(sel_location,unsafe_allow_html=True)
+    #sel_location = '<p style="font-style: oblique; text-align:left;color:white; font-size:16px">Select Location</p>'
+    #st.sidebar.markdown(sel_location,unsafe_allow_html=True)
     st.markdown(
     """
     <style>
     [data-baseweb="select"] {
-        margin-top: -50px;
+        margin-top: -10px;
         
         
         
@@ -586,9 +586,45 @@ def main():
         background-color: #585858;
     }
     div[data-baseweb="select"] > div {
-          background-color:#585858;
-          color: #c0c0c0;
-          border-color: #343A40;
+           width: 100%;
+            border:1px solid rgb(28 41 75 / 30%);
+            border-radius: 8px;
+            min-height:38px;
+            line-height:38px;
+            
+            font-size:15px;
+            font-weight:600;
+            color: rgb(28 41 75 / 40%);
+            font-family: 'Lato', sans-serif;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: transparent;
+            background-image: url(image/drop-down-icon.png);
+            background-repeat: no-repeat;
+            background-position-x: 96%;
+            background-position-y: 15px;
+            box-shadow: 0px 0px 3px rgb(136 136 136 / 28%);
+      }
+      
+      div.stButton > button:first-child {
+        background:#CC0919;
+        height:35px;
+        font-size:14px;
+        font-weight:600;
+        border:0;
+        border-radius:8px;
+        color:#fff;
+        padding:0 30px;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 0.2px;
+        box-shadow: 3px 3px 6px #88888869;
+        cursor:pointer;
+        margin-top:19px;
+        display: block;
+          width: 100%;
+          height: 40px;
+          font-size: 20px;
+        margin-top:45px;
       }
 
     </style>
@@ -653,8 +689,8 @@ def main():
 
           #country = st.sidebar.selectbox("Select Country", sorted(reference_file.Country.unique()), index=0)
           country = select_location.replace(" ", "-")
-          sel_prov_city = '<p style="font-style: oblique; text-align:left;color:white; font-size:16px">Select Province/City</p>'
-          st.sidebar.markdown(sel_prov_city,unsafe_allow_html=True)
+          #sel_prov_city = '<p style="font-style: oblique; text-align:left;color:white; font-size:16px">Select Province/City</p>'
+          #st.sidebar.markdown(sel_prov_city,unsafe_allow_html=True)
           city_name = st.sidebar.selectbox("Select Province/City", sorted(reference_file.loc[reference_file.Country == country].City.unique()))    
           city_name = city_name.replace("'", "")
           
@@ -698,7 +734,7 @@ def main():
                 st.image("https://flagcdn.com/256x192/"+ "us-" +result[4]+".png" , width=40)
             else:
                 st.image("https://flagcdn.com/256x192/"+result[4]+".png" , width=40)
-            html_newcases = str("<p style='text-align: right; color: white; font-size:20px'>") + str( "New Cases: " + f"{int(result[3]):,}")+ str("</p>")
+            html_newcases = str("<p style='text-align:right;margin-left:auto;background:#1C294B;height:36px;line-height:36px;font-size:14px;font-weight:600;border:0;color:#fff;padding:0 11px;font-family: 'Lato', sans-serif;letter-spacing: 0.5px;text-decoration:none;'>") + str( "New Cases: " + f"{int(result[3]):,}")+ str("</p>")
             col2.markdown(html_newcases, unsafe_allow_html=True)
             
             
