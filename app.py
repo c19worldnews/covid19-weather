@@ -542,7 +542,7 @@ def main():
     #fro google colab
     #st.sidebar.image("/content/drive/MyDrive/Weather/Deployment/tlogo.png")
     #for share streamlit
-    st.sidebar.image("tlogo.png")
+    #st.sidebar.image("tlogo.png")
     Date_today = date.today()  
        
     html_date = str("<p style='color: white; text-align:center; font-size:20px'>") + str(Date_today.strftime("%d %b, %y"))+ str("</p>")
