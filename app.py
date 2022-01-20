@@ -307,6 +307,222 @@ def main():
     #background-size: cover;
     #background-position: center;
     #backdrop-filter: blur(5px);
+    
+    st.markdown(
+                    """
+                    <style>
+                         *, *::before, *::after {
+                          box-sizing: border-box;
+                      }
+                      body{
+                        font-family: 'Lato', sans-serif;
+                        background:#f9f9f9;
+                        padding: 0;
+                          margin: 0;
+                      }
+                      .container-fluid {
+                          width: 100%;
+                          padding-right: 32px;
+                          padding-left: 32px;
+                          margin-right: auto;
+                          margin-left: auto;
+                      }
+                      .continer{ 
+                        max-width:1193px; 
+                        margin:auto;
+                        background:#fff;
+                        box-shadow: 0px 0px 10px rgb(136 136 136 / 28%);
+                      }
+                      .row{
+                        display: -ms-flexbox;
+                          display: flex;
+                          -ms-flex-wrap: wrap;
+                          flex-wrap: wrap;
+                          margin-right: -15px;
+                          margin-left: -15px;
+                      }
+                      .col-4, .col-8{
+                        position: relative;
+                          width: 100%;
+                          padding-right: 15px;
+                          padding-left: 15px;
+                      }
+                      .col-4 {
+                          -ms-flex: 0 0 33.33333%;
+                          flex: 0 0 33.33333%;
+                          max-width: 33.33333%;
+                      }
+                      .col-8 {
+                          -ms-flex: 0 0 66.66667%;
+                          flex: 0 0 66.66667%;
+                          max-width: 66.66667%;
+                      }
+                      .forecasting-wrap h2{
+                        background:#1C294B;
+                        font-size:30px;
+                        line-height:36px;
+                        font-weight:500;
+                        color:#fff;
+                        text-align:center;
+                        padding:13px 0;
+                        margin:0;
+                      }
+                      .location-form{
+                        max-width:394px;
+                        margin:64px auto 0;
+                        padding-bottom: 400px;
+                      }
+                      .location-form h3{
+                        color:#1C294B;
+                        font-size:23px;
+                        font-weight:700;
+                        font-family: 'Poppins', sans-serif;
+                        margin:0;
+                        padding-bottom:45px;
+                      }
+                      .location-form h3 img{ 
+                        margin-right:7px; 
+                          position: relative;
+                          top: 3px;
+                      }
+                      .location-form form .form-row{ margin-bottom:23px; } 
+                      .location-form form label{
+                        display:block;
+                        margin-bottom:10px;
+                        font-size:15px;
+                        font-weight:600;
+                        color:#1C294B;
+                      }
+                      .location-form form select{
+                          width: 100%;
+                        border:1px solid rgb(28 41 75 / 30%);
+                          border-radius: 8px;
+                        min-height:38px;
+                        line-height:38px;
+                        padding:0 13px;
+                        font-size:15px;
+                        font-weight:600;
+                          color: rgb(28 41 75 / 40%);
+                          font-family: 'Lato', sans-serif;
+                        -webkit-appearance: none;
+                          -moz-appearance: none;
+                          background: transparent;
+                          background-image: url(image/drop-down-icon.png);
+                          background-repeat: no-repeat;
+                          background-position-x: 96%;
+                          background-position-y: 15px;
+                        box-shadow: 0px 0px 3px rgb(136 136 136 / 28%);
+                      }
+                      .location-form form select:focus-visible{ outline:0; }
+                      .location-form form .footer-f{ text-align:center; }
+                      .location-form form button{
+                        background:#CC0919;
+                        height:35px;
+                        font-size:14px;
+                        font-weight:600;
+                        border:0;
+                        border-radius:8px;
+                        color:#fff;
+                        padding:0 30px;
+                        font-family: 'Lato', sans-serif;
+                          letter-spacing: 0.2px;
+                        box-shadow: 3px 3px 6px #88888869;
+                        cursor:pointer;
+                        margin-top:19px;
+                      }
+                      .forecasting-inner-sec{ padding:68px 0; }
+                      .forecasting-inner-sec .location-form{
+                        padding:50px 33px 105px;
+                          margin: 0;
+                          max-width: initial;
+                        background:#fff;
+                        box-shadow: 0px 0px 10px rgb(136 136 136 / 28%);
+                        border-radius:8px;
+                      }
+                      .weather-sec{
+                        padding:28px 33px;
+                          margin: 0;
+                          max-width: initial;
+                        background:#fff;
+                        box-shadow: 0px 0px 10px rgb(136 136 136 / 28%);
+                        border-radius:8px;
+                        height: 100%;
+                      }
+                      .weather-sec .heading-weather{ display:flex; }
+                      .weather-sec .heading-weather h4{
+                        color:#CC0919;
+                        font-size:18px;
+                        font-weight:700;
+                        font-family: 'Poppins', sans-serif;
+                        margin:0;
+                        padding-bottom:35px;
+                      }
+                      .weather-sec .heading-weather h4 img{ 
+                        margin-right:6px; 
+                          position: relative;
+                          top: 6px;
+                      }
+                      .weather-sec .heading-weather a{
+                        margin-left:auto;
+                        background:#1C294B;
+                        height:36px;
+                        line-height:36px;
+                        font-size:14px;
+                        font-weight:600;
+                        border:0;
+                        color:#fff;
+                        padding:0 11px;
+                        font-family: 'Lato', sans-serif;
+                          letter-spacing: 0.5px;
+                        text-decoration:none;
+                      }
+                      .forecasting-inner-sec .location-form form button {
+                          display: block;
+                          width: 100%;
+                          height: 40px;
+                          font-size: 20px;
+                        margin-top:45px;
+                      }
+
+                      @media (min-width: 768px) and (max-width: 1024px){
+                        
+                        .forecasting-inner-sec .location-form { padding: 50px 15px; }
+                        
+                      }
+
+                      @media (max-width: 767px){
+                        
+                        .col-4, .col-8 {
+                            -ms-flex: 0 0 100%;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                        .continer {	box-shadow: none; }
+                        .forecasting-wrap h2 {
+                            font-size: 18px;
+                            line-height: 28px;
+                          }
+                        .location-form { padding:0 15px; }
+                        .forecasting-inner-sec { padding: 50px 0; }
+                        .forecasting-inner-sec .location-form { 
+                          margin-bottom: 25px; 
+                          padding: 41px 20px 15px;
+                        }
+                        .weather-sec { padding: 28px 20px; }
+                        
+                       
+                      }
+
+
+                    </style>
+      """,
+      unsafe_allow_html=True
+              )
+
+    
+    
+    
+    
     st.sidebar.markdown(
       f"""
       <style>
