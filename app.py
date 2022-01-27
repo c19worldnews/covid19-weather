@@ -310,8 +310,8 @@ def main():
     #backdrop-filter: blur(5px);
 
     # CHANGES [START]
-    main_bg = "s3.jpg"
-    main_bg_ext = "jpg"
+    main_bg = "s3.png"
+    main_bg_ext = "png"
 
     st.markdown(
         f"""
