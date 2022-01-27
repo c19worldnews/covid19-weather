@@ -141,16 +141,9 @@ def prediction(city_name,country_name,iso_code,label_alpha_2,select_location):
 
   #for share streamlit
   #/app/deployment/chromedriver
-  chrome_options = webdriver.ChromeOptions()
-  chrome_options.add_argument('headless')
-  chrome_options.add_argument('--headless')
-  chrome_options.add_argument('--no-sandbox')
-  chrome_options.add_argument('--disable-dev-shm-usage')
-  chrome_options.add_argument("--use-fake-ui-for-media-stream")
-  from webdriver_manager.chrome import ChromeDriverManager
-  # ChromeDriverManager().install()
-  wd = webdriver.Chrome(executable_path ='./chromedriver.exe', options=chrome_options)
-  #wd = webdriver.Chrome(executable_path ='chromedriver')
+  
+  #wd = webdriver.Chrome(executable_path ='./chromedriver.exe', options=chrome_options)
+  wd = webdriver.Chrome(executable_path ='chromedriver', options=chrome_options)
   
 
   if select_location == 'USA':
